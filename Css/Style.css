@@ -1,0 +1,478 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+nav ul li a {
+    color: gray;
+    text-decoration: none;
+    display: block;
+}
+
+
+nav ul li {
+    padding: 0 12px;
+    float: right;
+}
+
+nav ul input {
+    border-radius: 20px;
+    text-align: center;
+    height: 30px;
+    width: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #1f1e1e;
+    border: #1f1e1e;
+}
+
+.brand img {
+    /* height: 50px; */
+    width: 40px;
+    padding: 0 8px;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.nav-div {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    gap: 10px;
+}
+.nav-div-bts2{
+    height: 50px;
+    width: 80px;
+    border-radius: 30px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+.nav-div li{
+    margin: 35px auto;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.nav-div li:hover{
+    color: rgb(125, 125, 125);
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: white;
+    font-weight: bold;
+}
+.nav-div-bts2:hover{
+    background-color: rgb(132, 132, 132);
+    width: 81px;
+    font-weight: bold;
+}
+
+
+/* Main Content */
+
+/* spliting the screen code */
+.split {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  /* padding-top: 10px; */
+  display: flex;
+}
+
+/* right side */
+.right{
+    position: absolute;
+    right: 0;
+    background-color: #111111;
+    /* outline:  2px solid red; */
+    width: 66%;
+    height: 81%;
+    margin: 0px 5px;
+    border-radius: 10px;
+}
+/* .right h1{
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+} */
+/* Album css right side */
+.album{
+    /* outline: 2px solid red;/ */
+    height: 250px;
+    width:100%;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: row; */
+}
+.album-h1{
+    color: white;
+    margin: 10px;
+}
+.card1 {
+  /* Add shadows to create the "card" effect */
+  width: 220px;
+  height: 250px;
+  background-color: #383838;
+  border-radius: 20px;
+  margin-left: 10px;
+  align-items: center;
+}
+.card1 img{
+    width: 220px;
+    height: 200px;
+    border-radius: 20px;
+}
+.container{
+    color: white;
+}
+.container img{
+    position: absolute;
+    right: 0;
+}
+.card2 {
+  /* Add shadows to create the "card" effect */
+  width: 220px;
+  height: 250px;
+  background-color: #383838;
+  border-radius: 20px;
+  margin-left: 10px;
+  align-items: center;
+}
+.card2 img{
+    width: 220px;
+    height: 200px;
+    border-radius: 20px;
+}
+.card3 {
+  /* Add shadows to create the "card" effect */
+  width: 220px;
+  height: 250px;
+  background-color: #383838;
+  border-radius: 20px;
+  margin-left: 10px;
+  align-items: center;
+}
+.card3 img{
+    width: 220px;
+    height: 200px;
+    border-radius: 20px;
+}
+.card4 {
+  /* Add shadows to create the "card" effect */
+  width: 220px;
+  height: 250px;
+  background-color: #383838;
+  border-radius: 20px;
+  margin-left: 10px;
+  align-items: center;
+}
+.card4 img{
+    width: 220px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.pre-btn,
+.nxt-btn{
+    background-color: #111111;
+    cursor: pointer;
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+.pre-btn{
+    left: 0;
+    /* transform: rotate(180deg);  */
+}
+.nxt-btn{
+    right: 0;
+}
+.pre-btn img,
+.nxt-btn img{
+    opacity: 1;
+}
+
+/* Playlist css */
+.playlist{
+    /* outline: 2px solid red; */
+    height: 250px;
+    width:100%;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: row; */
+}
+.playlist-h1{
+    color: white;
+    margin: 10px;
+}
+
+.left{
+    position: absolute;
+    left: 0;
+    background-color: #111111;
+    width: 32%;
+    height: 30%;
+    margin: 0px  5px;
+    border-radius: 10px;
+    /* display: flex; */
+    align-items: flex-start;
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+    overflow-y:auto ;
+    height: 100vh; /* or desired height */
+    overflow-y: auto;
+    background: rgba(24, 24, 24, 0.3); /* transparent by default */
+    transition: background 0.3s;
+}
+
+/* main content Left side */
+.header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #272727;
+    box-shadow: rgb(255, 255, 255);
+    /* box-sizing: border-box; */
+    align-items: center;
+    gap: 16px; /* Adjust spacing as needed */
+    margin-bottom: 16px; /* Optional: space below header */
+}
+.header h2{
+    margin: 10px 50px 10px 10px;
+    width: 150px;
+    color: white;
+    text-align: center;
+    font-size:large;
+}
+.header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #222;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: auto;         /* Ensure button is only as wide as its content */
+    margin: 10px 10px 10px 80px;           /* Remove any auto margin */
+    box-shadow: none;    /* Remove unwanted shadow if any */
+}
+.header button:hover{
+    background-color: #3c3c3c;
+}
+.header button img {
+    margin-right: 8px;   /* Space between icon and text */
+    width: 18px;
+    height: 18px;
+}
+
+
+/* Songs list left side */
+.songItemContainer{
+    margin: auto;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    color: white;
+    animation: appear  linear ;
+    animation-timeline: view();
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    border-radius: 10px;
+    background-color:#111111;
+    width: 400px;
+    color: rgb(255, 255, 255);
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.songItem img{
+    width: 50px;
+    margin: 0 23px;
+    border-radius: 2px;
+}
+.timestamp{
+    margin: 0 24px;
+}
+.timestamp i{
+    cursor: pointer;
+    margin-left: 20px;
+}
+.songItem:hover{
+    background-color: #383838;
+    cursor: pointer;
+}
+
+/* Bottom Banner */
+.bottom{
+    position: sticky;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    /* height: 100px; */
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+}
+.icons{
+    margin-top: 8px;
+}
+.icons i{
+    cursor: pointer;
+    margin: 8px 20px;
+}
+#myProgressBar{
+    width: 90vh;
+    accent-color: white;
+    cursor: pointer;
+}
+
+.songInfo{
+    /* outline: 2px solid red; */
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: start;
+    width: 300px;
+    height: 90%;
+    margin: 5px;
+}
+
+.songInfo img{
+    height: 55px;
+    margin: 10px 10px;
+    border-radius: 2px;
+}
+.songInfo h3{
+    margin: auto 10px;
+    color: white;
+    font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+}
+.songInfo span{
+    color: white;
+    margin: 15px 0px;
+    font-size: small;
+    font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Optional: Custom scrollbar styling for Webkit browsers */
+.left::-webkit-scrollbar {
+    width: 8px;
+}
+.left::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+.left::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Show solid background and scrollbar on hover */
+/* .left:hover {
+    background: rgba(24, 24, 24, 0.95);}   
+    Less transparent on hover */
+
+#gif{
+    margin: 10px 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    width:"100px";
+}
+
+/* Center play button over album image in cards */
+.card1, .card2, .card3, .card4 {
+    position: relative;
+}
+
+.card1 .play-btn,
+.card2 .play-btn,
+.card3 .play-btn,
+.card4 .play-btn {
+    position: absolute;
+    right: 8px;   /* Adjust as needed for spacing from the edge */
+    bottom: 50px;  /* Adjust as needed for spacing from the edge */
+    z-index: 2;
+    /* background: rgba(0,0,0,0.6); */
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card1 .play-btn i,
+.card2 .play-btn i,
+.card3 .play-btn i,
+.card4 .play-btn i,
+.card1 .play-btn,
+.card2 .play-btn,
+.card3 .play-btn,
+.card4 .play-btn {
+    font-size: 24px;
+    color: #fff;
+}
